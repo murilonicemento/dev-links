@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+.light-theme {
+  --text: #000000;
+  --stroke: rgba(0, 0, 0, 0.5);
+  --surface: rgba(255, 255, 255, 0.5);
+  --surface-hover: rgba(255, 255, 255, 0.8);
+  --hightlight: rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme {
+  --text: #ffffff;
+  --stroke: rgba(255, 255, 255, 0.5);
+  --surface: rgba(255, 255, 255, 0.1);
+  --surface-hover: rgba(255, 255, 255, 0.05);
+  --hightlight: rgba(255, 255, 255, 0.2);
+  --background-image: url(/assets/images/mobile-light-background.svg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: var(--background-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  width: 90%;
+  margin-top: 25%;
+  display: grid;
+  place-items: center;
+}
+
+#profile-picture {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+}
