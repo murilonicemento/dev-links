@@ -1,6 +1,6 @@
-# React Card Form
+# Dev Links
 
-Este é um aplicativo To-Do simples, criado utilizando React e Styled Components. Ele permite que o usuário adicione tarefas, marque como concluídas e exclua tarefas.
+Este é um projeto de um Linktree desenvolvido utilizando HTML, CSS e TypeScript. O Linktree é uma página que concentra vários links para diferentes plataformas ou conteúdos online, facilitando o compartilhamento de múltiplos links em um só lugar.
 
 ## Executando o projeto
 
