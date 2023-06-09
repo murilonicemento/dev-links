@@ -3,8 +3,8 @@
 .light-theme {
   --text: #000000;
   --stroke: rgba(0, 0, 0, 0.5);
-  --surface: rgba(255, 255, 255, 0.5);
-  --surface-hover: rgba(255, 255, 255, 0.8);
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-hover: rgba(0, 0, 0, 0.02);
   --hightlight: rgba(255, 255, 255, 0.1);
   --background-image: url(/assets/images/mobile-light-background.svg);
   --handle-margin: 29px;
@@ -42,6 +42,7 @@ main {
   width: 90%;
   display: grid;
   place-items: center;
+  padding: 20px;
 }
 
 #profile {
@@ -57,6 +58,11 @@ main {
   border-radius: 50%;
 }
 
+#profile p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
@@ -69,7 +75,9 @@ input[type="checkbox"] {
   display: block;
   width: 64px;
   height: 24px;
-  background-color: transparent;
+  background: var(--surface);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   cursor: pointer;
   border: 1px solid var(--stroke);
   border-radius: 50px;
@@ -82,4 +90,59 @@ input[type="checkbox"] {
   height: 35px;
   margin-left: var(--handle-margin);
   margin-top: -5px;
+}
+
+#links {
+  margin-top: 24px;
+}
+
+#links ul {
+  display: grid;
+  place-items: center;
+  gap: 16px;
+}
+
+#links ul li {
+  list-style-type: none;
+}
+
+#links a {
+  width: 312px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  background: var(--surface);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
+  border: 1px solid var(--stroke);
+  border-radius: 8px;
+  transition: 0.4s ease;
+}
+
+#links a:hover {
+  background: var(--surface-hover);
+  transition: 0.4s ease;
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+footer div a {
+  cursor: pointer;
 }
