@@ -38,7 +38,6 @@ body {
   background-image: var(--background-image-mobile);
   background-repeat: no-repeat;
   background-size: cover;
-  transition: background-image 0.2s ease;
 }
 
 main {
@@ -153,6 +152,14 @@ footer div a {
 
 footer p {
   color: var(--text);
+}
+
+footer p a {
+  text-decoration: underline;
+  color: var(--text);
+  text-decoration-skip-ink: none;
+  text-underline-offset: 4px;
+  cursor: pointer;
 }
 
 @media (min-width: 800px) {
