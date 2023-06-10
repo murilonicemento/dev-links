@@ -1,4 +1,6 @@
-const toggleTheme = document.querySelector("#switch button") as HTMLDivElement;
+const toggleTheme = document.querySelector(
+  "#switch button"
+) as HTMLButtonElement;
 
 toggleTheme.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
